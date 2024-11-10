@@ -1,0 +1,127 @@
+/* Hauptfenster und Dialoge */
+QMainWindow, QDialog {
+    background: transparent;  /* Transparent, damit das Hintergrundbild sichtbar ist */
+}
+
+/* Textfelder und Eingabefelder */
+QLineEdit, QTextEdit, QListWidget {
+    background-color: rgba(34, 40, 59, 0.8);  /* Dunkles Blau, leicht transparent */
+    color: #A8B8D8;  /* Helle Schriftfarbe */
+    border: 1px solid #3C4660;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+/* Buttons */
+QPushButton {
+    background-color: rgba(42, 49, 69, 0.7);  /* Halbtransparenter Hintergrund */
+    color: #A8B8D8;
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #3C4660;
+}
+
+QPushButton:hover {
+    background-color: rgba(60, 70, 96, 0.8); /* Etwas weniger transparent beim Hover */
+    color: #FFFFFF;
+}
+
+QPushButton:pressed {
+    background-color: rgba(38, 42, 59, 0.8); /* Etwas dunkler beim Drücken */
+}
+
+/* Checkbox */
+QCheckBox {
+    color: #D0D8E8;
+}
+
+QCheckBox::indicator {
+    background-color: rgba(60, 70, 96, 0.8);
+    border-radius: 9px;
+    border: 1px solid #A8B8D8;
+}
+
+QCheckBox::indicator:checked {
+    background-color: rgba(168, 184, 216, 0.8);
+    border: 1px solid rgba(138, 155, 178, 0.8);
+}
+
+/* Scrollbars */
+QScrollBar:vertical, QScrollBar:horizontal {
+    background: rgba(34, 40, 59, 0.5);
+    border: 1px solid #3C4660;
+}
+
+QScrollBar::handle:vertical, QScrollBar::handle:horizontal {
+    background-color: rgba(168, 184, 216, 0.7);
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical:hover, QScrollBar::handle:horizontal:hover {
+    background-color: rgba(138, 155, 178, 0.7);
+}
+
+/* Liste von gespeicherten Passwörtern */
+QListWidget {
+    background-color: rgba(34, 40, 59, 0.7);
+    border: 1px solid #3C4660;
+    border-radius: 8px;
+    padding: 5px;
+    color: #A8B8D8;
+}
+
+QListWidget::item {
+    background-color: rgba(42, 49, 69, 0.7);
+    border-radius: 15px;
+    margin: 6px;
+    padding: 8px;
+    color: #A8B8D8;
+}
+
+QListWidget::item:hover {
+    background-color: rgba(60, 70, 96, 0.8);
+}
+
+QListWidget::item:selected {
+    background-color: rgba(138, 155, 178, 0.8);
+    color: #1A1F2E;
+}
+
+/* URL-Label spezifisches Styling */
+QLabel#url_display {
+    color: #00BFFF;  /* Hellblauer Text für URL */
+    font-weight: bold;
+    text-decoration: underline;  /* Unterstreichung für Links */
+    background-color: rgba(42, 49, 69, 0.3);  /* Halbtransparenter Hintergrund */
+    padding: 4px;
+    border-radius: 4px;
+}
+
+/* Hover-Effekt für URLs */
+QLabel#url_display:hover {
+    color: #1E90FF;  /* Helleres Blau beim Hover */
+    background-color: rgba(42, 49, 69, 0.5);  /* Weniger Transparenz beim Hover */
+}
+
+/* Stil für den Haupttitel im Hauptfenster */
+QLabel#title_label {
+    color: #E0E8FF; /* Sehr helle Farbe */
+    font-size: 32px; /* Große Schriftgröße für den Titel */
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    letter-spacing: 1px; /* Erhöhte Buchstabenabstände */
+    border-bottom: 3px solid #6C63FF; /* Breiterer unterer Rand in lebendigem Violett-Blau */
+}
+
+/* Stil für den Untertitel (Beschreibung) */
+QLabel#description_label {
+    color: #f0f8ff; /* Hellerer Farbton für den Untertitel */
+    font-size: 16px; /* Etwas kleinere Schrift */
+    padding: 10px 0;
+    text-align: center;
+    font-style: italic; /* Kursiver Text für einen eleganten Effekt */
+    letter-spacing: 0.5px; /* Leichtes Letterspacing */
+    margin-bottom: 20px; /* Zusätzlicher Abstand nach unten */
+}

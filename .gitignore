@@ -1,0 +1,18 @@
+# Bytecode-Dateien
+*.pyc
+__pycache__/
+
+# Virtuelle Umgebung
+venv/
+env/
+
+# IDE-spezifische Dateien
+.vscode/
+.idea/
+
+# Betriebssystemspezifische Dateien
+.DS_Store
+Thumbs.db
+
+# Datenbankdateien, falls SQLite-Datenbank
+*.db
