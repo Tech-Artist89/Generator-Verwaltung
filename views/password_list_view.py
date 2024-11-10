@@ -4,7 +4,7 @@ from PySide6.QtGui import QPixmap
 from PySide6.QtCore import Qt
 from views.password_detail_view import PasswordDetailWidget
 from controllers.entry_controller import EntryController
-
+from utils.path_utils import get_resource_path
 
 class PasswordListView(QDialog):
     def __init__(self, entry_controller, parent=None):
@@ -14,7 +14,7 @@ class PasswordListView(QDialog):
 
         # Hintergrundbild hinzufügen
         self.background_label = QLabel(self)
-        pixmap = QPixmap("assets/images/passwort-generator.jpg")  # Pfad zum Bild
+        pixmap = QPixmap(get_resource_path("assets/images/passwort-generator.jpg"))  # Pfad zum Bild
         self.background_label.setPixmap(pixmap)
         self.background_label.setScaledContents(True)
         self.background_label.resize(self.size())  # Hintergrundbild an Fenstergröße anpassen
